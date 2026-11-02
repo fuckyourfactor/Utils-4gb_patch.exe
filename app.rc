@@ -1,0 +1,22 @@
+#include <windows.h>
+#include "resource.h"
+#pragma code_page(65001)
+
+IDI_PATCH ICON "assets/app.ico"
+IDC_LINK_CURSOR CURSOR "assets/link.cur"
+
+IDD_PATCH_DIALOG DIALOGEX 0, 0, 189, 99
+STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "4GB Patch"
+FONT 8, "MS Shell Dlg", 400, 0, 1
+BEGIN
+    ICON IDI_PATCH, -1, 8, 7, 21, 20, SS_REALSIZEIMAGE
+    LTEXT "Executable successfully patched!", IDC_PATCH_STATUS, 56, 15, 123, 8, WS_GROUP
+    DEFPUSHBUTTON "OK", IDC_PATCH_OK, 19, 46, 60, 21
+    PUSHBUTTON "Another File", IDC_ANOTHER_FILE, 19, 71, 60, 21
+    LTEXT "Daniel Pistelli © 2007.  All rights reserved.", -1, 96, 48, 75, 16, WS_GROUP
+    LTEXT "Visit:", -1, 96, 78, 16, 8, WS_GROUP
+    CONTROL "www.ntcore.com", IDC_WEBSITE, "Static", WS_CHILD | WS_VISIBLE | WS_GROUP | SS_NOTIFY, 119, 78, 56, 8
+END
+
+1 24 "app.manifest"

@@ -1,0 +1,8 @@
+#pragma once
+#define IDD_PATCH_DIALOG 101
+#define IDI_PATCH 104
+#define IDC_LINK_CURSOR 107
+#define IDC_PATCH_OK 1001
+#define IDC_ANOTHER_FILE 1002
+#define IDC_WEBSITE 1003
+#define IDC_PATCH_STATUS 1004
